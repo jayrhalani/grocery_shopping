@@ -30,8 +30,8 @@ class CircleIconView extends StatelessWidget {
       child: Center(
         child: Image.asset(
           imagePath,
-          width: (size ?? 46.h) * 0.6,
-          height: (size ?? 46.h) * 0.6,
+          width: (size ?? 46.h) * 0.5,
+          height: (size ?? 46.h) * 0.5,
           fit: BoxFit.contain,
         ),
       ),

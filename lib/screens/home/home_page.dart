@@ -8,6 +8,8 @@ import 'package:grocery_shopping/screens/home/widgets/home_top_bar.dart';
 import 'package:grocery_shopping/screens/home/widgets/popular_item_card.dart';
 import 'package:grocery_shopping/utils/assets_res.dart';
 import 'package:grocery_shopping/utils/color_res.dart';
+import 'package:grocery_shopping/utils/common_methods.dart';
+import 'package:grocery_shopping/utils/nav_res.dart';
 
 import 'model/toggle_model.dart';
 
@@ -38,7 +40,9 @@ class _HomePageState extends State<HomePage> {
       price: 10.0,
       rating: 3.5,
       discount: 5,
+      quantity: 0,
       deliveryTime: '10 min',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     ),
     PopularItemModel(
       name: 'Organic Basket',
@@ -46,7 +50,9 @@ class _HomePageState extends State<HomePage> {
       price: 15.0,
       rating: 4.0,
       discount: 10,
+      quantity: 0,
       deliveryTime: '12 min',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     ),
     // Add more items as you like
   ];
@@ -125,31 +131,31 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const HomeTopBar(),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-              child: Column(
-                children: [
-                  const HomeTopBar(),
-                  SizedBox(height: 20.h),
-                  CustomToggle(
-                    options: [
-                      ToggleModel(
-                        name: 'Delivery',
-                        image: AssetsRes.icToggleDelivery,
-                      ),
-                      ToggleModel(
-                        name: 'Pickup',
-                        image: AssetsRes.icToggleTruck,
-                      )
-                    ],
-                    initialSelection: currentSelection,
-                    onSelected: (value) {
-                      setState(() {
-                        currentSelection = value;
-                      });
-                    },
+              padding: EdgeInsets.only(
+                left: 16.w,
+                right: 16.w,
+                top: 8.h,
+                bottom: 12.h,
+              ),
+              child: CustomToggle(
+                options: [
+                  ToggleModel(
+                    name: 'Delivery',
+                    image: AssetsRes.icToggleDelivery,
                   ),
+                  ToggleModel(
+                    name: 'Pickup',
+                    image: AssetsRes.icToggleTruck,
+                  )
                 ],
+                initialSelection: currentSelection,
+                onSelected: (value) {
+                  setState(() {
+                    currentSelection = value;
+                  });
+                },
               ),
             ),
             Expanded(
@@ -192,7 +198,15 @@ class _HomePageState extends State<HomePage> {
                       separatorBuilder: (_, __) => SizedBox(height: 16.h),
                       itemBuilder: (context, index) {
                         final item = popularItems[index];
-                        return PopularItemCard(item: item);
+                        return PopularItemCard(
+                          item: item,
+                          onTap: () {
+                            navigationToNamed(
+                              NavRes.productDetailsScreen,
+                              arguments: item,
+                            );
+                          },
+                        );
                       },
                     ),
                   ],

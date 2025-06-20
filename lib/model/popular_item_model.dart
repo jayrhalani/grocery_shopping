@@ -4,7 +4,9 @@ class PopularItemModel {
   final double price;
   final double rating;
   final int discount;
+  int quantity;
   final String deliveryTime;
+  final String description;
 
   PopularItemModel({
     required this.name,
@@ -12,6 +14,8 @@ class PopularItemModel {
     required this.price,
     required this.rating,
     required this.discount,
+    required this.quantity,
     required this.deliveryTime,
+    required this.description,
   });
 }

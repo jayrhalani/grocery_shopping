@@ -4,10 +4,13 @@ const String icons = "assets/icons";
 class AssetsRes {
   static const imgNotFound = '$images/img_not_found.jpg';
   static const imgVegetableBasket = '$images/img_vegetable_basket.jpg';
+  static const imgMonochromeCityscape = '$images/img_monochrome_cityscape.png';
 
   static const icNotification = '$icons/ic_notification.png';
   static const icLocation = '$icons/ic_location.png';
   static const icSearch = '$icons/ic_search.png';
+  static const icBack = '$icons/ic_back.png';
+  static const icShare = '$icons/ic_share.png';
 
   static const icDelivery = '$icons/ic_delivery.png';
   static const icTruck = '$icons/ic_truck.png';
@@ -26,5 +29,8 @@ class AssetsRes {
   static const icCategoryGrains = '$icons/ic_category_grains.png';
   static const icCategoryOrganic = '$icons/ic_category_organic.png';
 
+  static const icBoxDelivered = '$icons/ic_box_delivered.png';
+  static const icOnTime = '$icons/ic_on_time.png';
+  static const icStar = '$icons/ic_star.png';
 }
 

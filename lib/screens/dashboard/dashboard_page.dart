@@ -198,7 +198,7 @@ class DashboardPage extends StatelessWidget {
               Spacer(),
               Icon(Icons.delivery_dining, size: 16.sp, color: Colors.grey),
               SizedBox(width: 4.w),
-              Text('Delivered', style: TextStyle(fontSize: 12.sp)),
+              Text('Available', style: TextStyle(fontSize: 12.sp)),
               SizedBox(width: 10.w),
               Icon(Icons.timer_outlined, size: 16.sp, color: Colors.grey),
               SizedBox(width: 4.w),

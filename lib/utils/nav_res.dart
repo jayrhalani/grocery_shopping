@@ -7,4 +7,10 @@ class NavRes {
 
   // home
   static const homeScreen = "/home";
+
+  // product details
+  static const productDetailsScreen = "/productDetails";
+
+  // cart
+  static const cartScreen = "/cart";
 }
