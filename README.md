@@ -26,7 +26,7 @@ This project is built purely for **design demonstration** — no backend or busi
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/your-username/grocery-shopping-ui.git
+   https://github.com/jayrhalani/grocery_shopping.git
    ```
 2. Install dependencies:
 
