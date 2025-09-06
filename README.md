@@ -1,16 +1,53 @@
-# grocery_shopping
+# 🛒 Grocery Shopping – Demo UI
 
-A new Flutter project.
+A minimal **Flutter UI project** showcasing 3 essential screens of a Grocery Shopping app.
+This project is built purely for **design demonstration** — no backend or business logic is included.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+|                            Home Screen                           |                                      Product Details                                      |                            Cart Screen                           |
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![Home](/screenshots/screenshot_home.png?raw=true "Home Screen") | ![Details](/screenshots/screenshot_product_details.png?raw=true "Product Details Screen") | ![Cart](/screenshots/screenshot_cart.png?raw=true "Cart Screen") |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Tech Stack
+
+* **Flutter**
+* **Dart**
+* **Material Design 3**
+
+---
+
+## 🔧 Setup Instructions
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/your-username/grocery-shopping-ui.git
+   ```
+2. Install dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+3. Run the app:
+
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 🙌 Notes
+
+* UI showcase only (no backend integration).
+* Designed to demonstrate clean layout, theming, and component usage in Flutter.
+
+---
+
+## 👋 Author
+
+Made with ❤️ by **Jay Halani**
