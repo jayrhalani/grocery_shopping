@@ -7,9 +7,9 @@ This project is built purely for **design demonstration** — no backend or busi
 
 ## 📸 Screenshots
 
-|                            Home Screen                           |                                      Product Details                                      |                            Cart Screen                           |
-| :--------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![Home](/screenshots/screenshot_home.png?raw=true "Home Screen") | ![Details](/screenshots/screenshot_product_details.png?raw=true "Product Details Screen") | ![Cart](/screenshots/screenshot_cart.png?raw=true "Cart Screen") |
+|                                      Home Screen                                     |                                               Product Details                                              |                                      Cart Screen                                     |
+| :----------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| <img src="/screenshots/screenshot_home.png?raw=true" width="250" alt="Home Screen"/> | <img src="/screenshots/screenshot_product_details.png?raw=true" width="250" alt="Product Details Screen"/> | <img src="/screenshots/screenshot_cart.png?raw=true" width="250" alt="Cart Screen"/> |
 
 ---
 
